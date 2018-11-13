@@ -31,5 +31,6 @@ public class Operacions {
     }
     public static boolean esCorrecte(String s){
         s.matches("([0-9]+)(\+|\-|\*|\/)([0-9]+)");
+        return s;
     }
 }
