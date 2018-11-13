@@ -25,5 +25,5 @@ public class Operacions {
     }
     public static int division(int numero1, int numero2, int resultado){
         resultado=numero1/numero2;
-        retrun resultado;
+        return resultado;
     }
