@@ -19,11 +19,13 @@ public class Operacions {
         
         return resultat;
     }
-    public static int resta(int numero1, int numero2, int resultado){
+    public static int resta(int numero1, int numero2){
+         int resultado;
         resultado=numero1-numero2;
         return resultado;
     }
-    public static int division(int numero1, int numero2, int resultado){
+    public static int division(int numero1, int numero2){
+         int resultado;
         resultado=numero1/numero2;
         return resultado;
     }
