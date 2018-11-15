@@ -105,7 +105,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "1+1";
         boolean expResult = true;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -115,7 +115,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "28-123";
         boolean expResult = true;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -125,7 +125,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "1*21";
         boolean expResult = true;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -135,7 +135,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "123/5";
         boolean expResult = true;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -145,7 +145,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "a+8";
         boolean expResult = false;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -155,7 +155,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "5=3";
         boolean expResult = false;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -165,7 +165,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "53*8a1";
         boolean expResult = false;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -175,7 +175,7 @@ public class OperacionsTest {
         System.out.println("esCorrecte");
         String s = "22/+4";
         boolean expResult = false;
-        boolean result = Operacions.esCorrecte(s);
+        boolean result = Expressions.esCorrecte(s);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
