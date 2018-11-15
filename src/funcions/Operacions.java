@@ -29,11 +29,5 @@ public class Operacions {
         resultado=numero1/numero2;
         return resultado;
     }
-    public static boolean esCorrecte(String s){
-        
-        return s.matches("[0-9]+[\\+\\-\\*/][0-9]+");
-    }
-    public static String eliminarEspacios(String s){
-        return s.replaceAll("\\s", "");
-    }
+    
 }
