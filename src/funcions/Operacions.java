@@ -30,7 +30,10 @@ public class Operacions {
         return resultado;
     }
     public static boolean esCorrecte(String s){
-        s.matches("([0-9]+)(\+|-|\*|/)([0-9]+)");
-        return s;
+        
+        return s.matches("[0-9]+[\\+\\-\\*/][0-9]+");
+    }
+    public static String eliminarEspacios(String s){
+        return s.replaceAll("\\s", "");
     }
 }
