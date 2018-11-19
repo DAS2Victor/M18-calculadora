@@ -11,8 +11,8 @@ package funcions;
  */
 public class Calculadora {
     public static int calculOperacionsEnters(String s){
-        //Rep una cadena de text amb una operació
-        //Valida l'operació i retorna el resultat
+        //Rep una cadena de text amb una operació i retorna el resultat
+
         
         return 0;
     } 
