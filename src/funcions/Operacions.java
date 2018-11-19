@@ -29,5 +29,5 @@ public class Operacions {
         resultado=numero1/numero2;
         return resultado;
     }
-    
+        
 }
