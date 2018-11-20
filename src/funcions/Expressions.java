@@ -12,7 +12,7 @@ package funcions;
 public class Expressions {
     public static boolean esCorrecte(String s){
         
-        return s.matches("[0-9]+[\\+\\-\\*/][0-9]+");
+        return s.matches("[0-9]+[\\+\\-\\*/^][0-9]+");
     }
     public static String eliminarEspacios(String s){
         return s.replaceAll("\\s", "");

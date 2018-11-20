@@ -24,10 +24,17 @@ public class Operacions {
         resultado=numero1-numero2;
         return resultado;
     }
-    public static int division(int numero1, int numero2){
-         int resultado;
-        resultado=numero1/numero2;
+    public static double division(int numero1, int numero2){
+        double resultado;
+        resultado=(double)numero1/numero2;
         return resultado;
     }
-        
+    public static int potencia(int base, int potencia){
+        int resultado=1;
+        int i;
+        for(  i=1; i<=potencia; i++){
+           resultado=resultado*base;
+        }
+        return resultado;
+    }
 }

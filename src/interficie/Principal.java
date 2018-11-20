@@ -25,7 +25,7 @@ public class Principal {
                 text = Expressions.eliminarEspacios(text);
             }
 
-            System.out.println("El resultado es:" +Calculadora.calculOperacionsEnters(text));
+            System.out.printf("El resultado es: %.2f \n" ,Calculadora.calculOperacionsEnters(text));
             text=s.nextLine();
 
         }
