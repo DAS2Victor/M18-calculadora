@@ -17,4 +17,8 @@ public class Expressions {
     public static String eliminarEspacios(String s){
         return s.replaceAll("\\s", "");
     }
+    public static boolean esEquacioCorrecta(String s){
+        
+        return true;
+    }
 }

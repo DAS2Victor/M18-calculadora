@@ -18,14 +18,19 @@ public class Principal {
         text = s.nextLine();
         while (!text.equals("q")) {
             text = Expressions.eliminarEspacios(text);
+            if (text.matches("[xX]+")) {
+                // És una equació
 
-            while (!Expressions.esCorrecte(text)) {//si no es correcto seguimos recoriendo el programa
-                System.out.println("Inserte una operación: ");
-                text = s.nextLine();
-                text = Expressions.eliminarEspacios(text);
+            } else {
+                // És una operació
+                while (!Expressions.esCorrecte(text)) {//si no es correcto seguimos recoriendo el programa
+                    System.out.println("Inserte una operación: ");
+                    text = s.nextLine();
+                    text = Expressions.eliminarEspacios(text);
+                }
+                System.out.printf("El resultado es: %.2f \n" ,Calculadora.calculOperacionsEnters(text));
             }
-
-            System.out.printf("El resultado es: %.2f \n" ,Calculadora.calculOperacionsEnters(text));
+            
             text=s.nextLine();
 
         }
