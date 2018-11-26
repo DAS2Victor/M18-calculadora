@@ -4,33 +4,33 @@ package funcions;
 public class Operacions {
     
     
-    public static int suma (int num1, int num2){
-        int resultat;
+    public static double suma (double num1, double num2){
+        double resultat;
         
         resultat = num1+num2;
         
         return resultat;
     }
     
-    public static int multiplicacio (int num1, int num2){
-        int resultat;
+    public static double multiplicacio (double num1, double num2){
+        double resultat;
         
         resultat = num1*num2;
         
         return resultat;
     }
-    public static int resta(int numero1, int numero2){
-         int resultado;
+    public static double resta(double numero1, double numero2){
+         double resultado;
         resultado=numero1-numero2;
         return resultado;
     }
-    public static double division(int numero1, int numero2){
+    public static double division(double numero1, double numero2){
         double resultado;
-        resultado=(double)numero1/numero2;
+        resultado=numero1/numero2;
         return resultado;
     }
-    public static int potencia(int base, int potencia){
-        int resultado=1;
+    public static double potencia(double base, double potencia){
+        double resultado=1;
         int i;
         for(  i=1; i<=potencia; i++){
            resultado=resultado*base;

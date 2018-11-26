@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
-
+        double resultado;
         String text;
         Scanner s = new Scanner(System.in);
         System.out.println("-------------------");
@@ -18,8 +18,14 @@ public class Principal {
         text = s.nextLine();
         while (!text.equals("q")) {
             text = Expressions.eliminarEspacios(text);
-            if (text.matches("[xX]+")) {
+            if (text.matches(".*[xX].*")) {
                 // És una equació
+                while (!Expressions.esEquacioCorrecta(text)) {//si no es correcto seguimos recoriendo el programa
+                    System.out.println("Inserte una operación : ");
+                    text = s.nextLine();
+                    text = Expressions.eliminarEspacios(text);
+                }
+                resultado = Calculadora.calculEquacions(text);
 
             } else {
                 // És una operació
@@ -28,10 +34,12 @@ public class Principal {
                     text = s.nextLine();
                     text = Expressions.eliminarEspacios(text);
                 }
-                System.out.printf("El resultado es: %.2f \n" ,Calculadora.calculOperacionsEnters(text));
+
+                resultado = Calculadora.calculOperacionsEnters(text);
+
             }
-            
-            text=s.nextLine();
+            System.out.printf("El resultado es: %.2f \n", resultado);
+            text = s.nextLine();
 
         }
 

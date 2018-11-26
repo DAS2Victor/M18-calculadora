@@ -10,14 +10,16 @@ package funcions;
  * @author victor
  */
 public class Calculadora {
+    
     public static double calculOperacionsEnters(String s){
         //Rep una cadena de text amb una operació i retorna el resultat
         double resultado=0;
         String []num=s.split("[\\+\\-\\*/^]");
-        int x = Integer.parseInt(num[0]);
-        int y = Integer.parseInt(num[1]);
-        String []oper=s.split("[0-9]+");
+        double x = Double.parseDouble(num[0]);
+        double y = Double.parseDouble(num[1]);
+        String []oper=s.split("[0-9]+[\\.]?[0-9]?");
         String simbolo=oper[1];// es la posicion el []
+        
         if(oper[1].equals("+")){
             resultado=Operacions.suma(x, y);
         }else if(oper[1].equals("-")){
@@ -33,4 +35,16 @@ public class Calculadora {
         
         return resultado;
     } 
+    public static double calculEquacions(String s){
+       
+        double resultado;
+        String [] num =s.split("[xX=]");
+        double primero = Expressions.llegirNum(num[0]);
+        double segundo= Expressions.llegirNum(num[1]);
+        double resul= Expressions.llegirNum(num[2]);
+        resultado=(resul-segundo)/primero;
+        
+        return resultado;
+    }
+    
 }
